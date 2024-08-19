@@ -17,10 +17,6 @@ export default function Index() {
     socket.on("valorant:roster", setRoster);
   }, [socket]);
 
-  useEffect(() => {
-    console.log("Roster updated", roster);
-  }, roster);
-
   return (
     <main className="flex w-full h-full">
       <div className="mt-6 mx-auto">
